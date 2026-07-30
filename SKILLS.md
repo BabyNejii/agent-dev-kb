@@ -25,14 +25,17 @@ used at all.
 | `/design-mcp-tools` | Building or reviewing an MCP server or tool definition |
 | `/project-instructions` | CLAUDE.md ignored or too long; path-scoped rules; monorepo setup |
 | `/shape-llm-output` | Need parseable/consistent output from a model call |
+| `/operate-agents` | Guarding a run, runaway loop, "what did it do", telemetry, cost attribution |
 
 ## Source mapping
 
 ### `/save-tokens`
 - **verified:** [[claude-code-context-window]], [[subagent-fan-out]],
-  [[building-custom-subagents]], [[path-scoped-rules]]
+  [[building-custom-subagents]], [[path-scoped-rules]], [[token-counting-api-preflighting]],
+  [[batch-api-cost-reduction]], [[claude-code-jsonl-session-logs]]
 - *reported (supporting detail only):* [[prompt-caching-with-claude-api]],
-  [[context-compaction-beta]]
+  [[context-compaction-beta]], [[progressive-disclosure-lazy-context]],
+  [[agent-context-lifecycle-management]]
 
 ### `/delegate-work`
 - **verified:** [[subagent-fan-out]], [[agent-teams-coordination]],
@@ -52,13 +55,29 @@ used at all.
 ### `/shape-llm-output`
 - **verified:** [[structured-outputs-api]], [[xml-structured-prompting]], [[few-shot-examples]]
 
+### `/operate-agents`
+- **verified:** [[pretooluse-guards-dangerous-operations]],
+  [[permission-deny-rules-resource-isolation]], [[postoolbatch-circuit-breaker-parallel-tasks]],
+  [[agent-sdk-otel-observability]], [[claude-code-jsonl-session-logs]],
+  [[token-counting-api-preflighting]], [[admin-cost-report-api]]
+- *reported (supporting detail only):* [[action-cache-replay]], [[cost-budgeted-routing]],
+  [[multi-agent-cost-attribution-sdk]], [[mcp-tool-execution-sandboxing]]
+
+Seven verified entries back this one - the strongest backbone of any skill here, because Claude
+Code documents guards, telemetry, and cost measurement natively.
+
 ## Verified entries deliberately NOT installed
 
-- [[claude-code-hooks-tool-lifecycle]] - hook authoring and `settings.json` editing are already
-  covered by the built-in `update-config` skill. Installing a second one would duplicate it,
-  and two skills competing for the same trigger is worse than one.
+- [[claude-code-hooks-tool-lifecycle]] - the *mechanics* of authoring hooks and editing
+  `settings.json` are covered by the built-in `update-config` skill, and the *safety use* of hooks
+  is now covered by `/operate-agents`. A third skill on the same surface would just compete for
+  the same trigger.
+- Remaining `verified` entries not backing a skill are single-topic ones whose content lives
+  inside a broader skill rather than justifying its own (e.g. [[mcp-tool-standardization]],
+  [[agent-teams-coordination]] both feed `/delegate-work` and `/design-mcp-tools`).
 
-That accounts for all 14 `verified` entries: 13 back a skill, 1 was intentionally skipped.
+Run `python tools/query.py --confidence verified` for the current authoritative list; the counts
+above go stale as entries are promoted.
 
 ## Keeping this in sync
 
