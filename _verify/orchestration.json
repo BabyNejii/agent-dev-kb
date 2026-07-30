@@ -1,0 +1,51 @@
+[
+  {
+    "id": "agent-teams-coordination",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.claude.com/docs/en/agent-teams",
+    "note": "Official docs confirm peer messaging and SendMessage tool"
+  },
+  {
+    "id": "debate-pattern",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "General multi-agent pattern, no tier-1 official source"
+  },
+  {
+    "id": "git-worktree-isolation",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Standard git feature, not anthropic-specific technique"
+  },
+  {
+    "id": "mcp-tool-standardization",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://modelcontextprotocol.io/specification/2025-03-26",
+    "note": "Official MCP specification confirms protocol standardization"
+  },
+  {
+    "id": "planner-executor-loop",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "General orchestration pattern with credible community sources"
+  },
+  {
+    "id": "subagent-fan-out",
+    "new_confidence": "verified",
+    "verdict": "KEEP",
+    "authoritative_source": "https://docs.claude.com/en/docs/claude-code",
+    "note": "Already verified with official tier-1 source"
+  },
+  {
+    "id": "supervisor-pattern",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Established pattern, sources not tier-1 anthropic official"
+  }
+]

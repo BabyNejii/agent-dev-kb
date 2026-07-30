@@ -1,0 +1,33 @@
+[
+  {
+    "file": "techniques/eval/llm-as-judge-multi-tier.md",
+    "zylos_reachable": true,
+    "claims_removed": [],
+    "sources_added": [
+      "https://galileo.ai/blog/why-llm-as-a-judge-fails"
+    ],
+    "new_confidence": "reported",
+    "notes": "Claims about 97% cost reduction and Luna-2 model verified against zylos source. Added Galileo corroboration for Luna-2 figures."
+  },
+  {
+    "file": "techniques/eval/schema-validation-gates.md",
+    "zylos_reachable": true,
+    "claims_removed": [
+      "40-60% of hallucinations can be caught mechanically (problem statement)",
+      "40-60% of agent hallucinations are format errors (body paragraph)",
+      "Catches 40-60% of issues at zero cost (Tradeoffs section)",
+      "30-40% of hallucinations caught (Notes section)"
+    ],
+    "sources_added": [],
+    "new_confidence": "reported",
+    "notes": "Unverifiable 40-60% and 30-40% figures removed and rewritten qualitatively. WebFetch of zylos source showed the specific percentage claims were not present. developersdigest.tech source did not contain these figures either. Confidence upgraded from speculative to reported since underlying technique is sound; only quantitative claims were unsupported."
+  },
+  {
+    "file": "techniques/orchestration/git-worktree-isolation.md",
+    "zylos_reachable": true,
+    "claims_removed": [],
+    "sources_added": [],
+    "new_confidence": "reported",
+    "notes": "Zylos URL verified as real and relevant to topic. No technique-specific claims attributed solely to zylos. File left substantively unchanged."
+  }
+]

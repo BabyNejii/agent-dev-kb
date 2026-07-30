@@ -1,0 +1,51 @@
+[
+  {
+    "id": "ai-assisted-tdd",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide",
+    "note": "VS Code official docs confirm Red-Green-Refactor TDD pattern for agents"
+  },
+  {
+    "id": "checkpoint-commit-discipline",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Git commit discipline well-supported by consistent blog sources"
+  },
+  {
+    "id": "explore-plan-code-commit",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Four-phase workflow pattern verified across multiple blog sources"
+  },
+  {
+    "id": "human-in-loop-review",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Review gate strategy documented consistently across blog sources"
+  },
+  {
+    "id": "iterative-self-refinement",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": "https://deepsense.ai/resource/self-correcting-code-generation-using-multi-step-agent/",
+    "note": "Metrics verified: source reports 53.8%→81.8% (entry claims 54%→82%)"
+  },
+  {
+    "id": "plan-then-execute",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Pattern and metrics (92%/3.6×) verified in dev.to blog source"
+  },
+  {
+    "id": "spec-driven-agent-development",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Spec-driven development approach consistent with blog sources"
+  }
+]

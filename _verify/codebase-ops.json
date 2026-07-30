@@ -1,0 +1,44 @@
+[
+  {
+    "id": "code-summary-meta-rag",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "arxiv paper confirms Meta-RAG, 80% token reduction, but not Tier-1 official doc"
+  },
+  {
+    "id": "controlled-dead-code-removal",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "GitHub community guides and linter tools verified; general practices"
+  },
+  {
+    "id": "hybrid-codemod-agent-refactoring",
+    "new_confidence": "reported",
+    "verdict": "FIX",
+    "authoritative_source": "https://codemod.com/blog/npx-codemod-ai",
+    "note": "Removed bad GitNation URL; Codemod.com and Qonto blogs confirm hybrid approach"
+  },
+  {
+    "id": "phased-dependency-upgrade",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Medium, Koder.ai, and arxiv sources verify technique; no Tier-1 official doc"
+  },
+  {
+    "id": "safe-monolith-decomposition",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "note": "SitePoint fetch failed (403); GitHub source confirms dead code removal patterns"
+  },
+  {
+    "id": "subagent-test-generation-bulk",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.claude.com/docs/en/agent-sdk/subagents",
+    "note": "Official Claude docs confirm subagent parallelization and context isolation core mechanisms"
+  }
+]

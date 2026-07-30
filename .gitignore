@@ -1,0 +1,15 @@
+# Quarantine for pipeline-drafted entries awaiting human review. These are
+# unreviewed by definition, so they must not be committed as if they were part
+# of the knowledge base. The folder's README is kept so the directory survives.
+_inbox/*
+!_inbox/README.md
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

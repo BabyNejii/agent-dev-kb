@@ -1,0 +1,37 @@
+[
+  {
+    "id": "few-shot-examples",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "note": "Official docs confirm core mechanism"
+  },
+  {
+    "id": "instruction-hierarchy-layering",
+    "new_confidence": "reported",
+    "verdict": "FIX",
+    "authoritative_source": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "note": "Corrected overstated precedence; files concatenated not overridden"
+  },
+  {
+    "id": "negative-instructions-effectiveness",
+    "new_confidence": "reported",
+    "verdict": "PROMOTE",
+    "authoritative_source": null,
+    "note": "Upgraded from speculative; consistent community corroboration"
+  },
+  {
+    "id": "structured-outputs-api",
+    "new_confidence": "verified",
+    "verdict": "FIX",
+    "authoritative_source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+    "note": "Fixed model list; updated from Opus 5 etc to Claude 4.5+"
+  },
+  {
+    "id": "xml-structured-prompting",
+    "new_confidence": "verified",
+    "verdict": "FIX",
+    "authoritative_source": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags",
+    "note": "Clarified 20-40% as community reports; official docs confirm core mechanism"
+  }
+]

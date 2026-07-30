@@ -1,0 +1,44 @@
+[
+  {
+    "id": "agentic-rag-tool-based-retrieval",
+    "new_confidence": "reported",
+    "verdict": "FIX",
+    "authoritative_source": null,
+    "note": "Removed unsourced 40% failure rate claim"
+  },
+  {
+    "id": "auto-memory-for-claude-code",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.claude.com/docs/en/memory",
+    "note": "Core claims confirmed by official Claude Code docs"
+  },
+  {
+    "id": "claude-md-persistent-memory",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.claude.com/docs/en/memory",
+    "note": "All core mechanism details verified against official docs"
+  },
+  {
+    "id": "context-compaction-beta",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://platform.claude.com/docs/en/build-with-claude/compaction",
+    "note": "Beta header, feature, and API verified in official docs"
+  },
+  {
+    "id": "mcp-code-api-over-tools",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Specific data points verified in cited blogs; Anthropic engineering post exists"
+  },
+  {
+    "id": "prompt-caching-with-claude-api",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+    "note": "Pricing, TTL, min lengths all match official API docs"
+  }
+]

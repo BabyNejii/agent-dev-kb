@@ -1,0 +1,44 @@
+[
+  {
+    "id": "building-custom-subagents",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.claude.com/docs/en/sub-agents",
+    "note": "Tier-1 official docs confirm subagent architecture, context isolation, tool restrictions, and permissionMode field."
+  },
+  {
+    "id": "claude-code-hooks-tool-lifecycle",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://code.claude.com/docs/en/hooks",
+    "note": "Tier-1 official docs verify hook types, exit codes, event structure, and configuration details."
+  },
+  {
+    "id": "claude-tool-naming-descriptions",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools",
+    "note": "Tier-1 sources (platform.claude.com and anthropic.com) confirm tool descriptions as critical factor in agent performance and naming conventions."
+  },
+  {
+    "id": "mcp-error-handling-model-recovery",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://modelcontextprotocol.io/docs/concepts/tools/",
+    "note": "Tier-1 MCP docs confirm isError flag, error handling pattern, and application vs protocol error distinction."
+  },
+  {
+    "id": "mcp-tool-design-principles",
+    "new_confidence": "verified",
+    "verdict": "PROMOTE",
+    "authoritative_source": "https://modelcontextprotocol.io/docs/concepts/tools/",
+    "note": "Tier-1 sources across modelcontextprotocol.io, platform.claude.com, and anthropic.com confirm tool consolidation, batching, and response design."
+  },
+  {
+    "id": "mcp-tool-execution-sandboxing",
+    "new_confidence": "reported",
+    "verdict": "FIX",
+    "authoritative_source": null,
+    "note": "Removed unsourced '28% Fortune 500' claim; web search flagged it as poorly sourced. Core techniques (Docker/gVisor/Firecracker) verified but lack Tier-1 official source."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "adversarial-code-review",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Sources verified; maker-checker pattern confirmed by augmentcode.com and arxiv paper."
+  },
+  {
+    "id": "api-hallucination-prevention",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Sources verified; technique confirmed by augmentcode.com and developersdigest.tech."
+  },
+  {
+    "id": "llm-as-judge-multi-tier",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Tiered judge pattern verified; 97% cost reduction attributed to Luna-2 via zylos.ai."
+  },
+  {
+    "id": "mutation-testing-agent-code",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Technique verified by augmentcode.com and thoughtworks.com; tools and patterns confirmed."
+  },
+  {
+    "id": "schema-validation-gates",
+    "new_confidence": "speculative",
+    "verdict": "DOWNGRADE",
+    "authoritative_source": null,
+    "note": "Core claim (40-60% hallucinations caught) unconfirmed single zylos source."
+  },
+  {
+    "id": "self-critique-reflection-loop",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Technique verified by taskade.com and medium.com; reflection patterns confirmed."
+  }
+]

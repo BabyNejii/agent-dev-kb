@@ -1,0 +1,44 @@
+[
+  {
+    "id": "antigravity-agent-manager",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/",
+    "note": "All claims verified from official Google sources"
+  },
+  {
+    "id": "claude-antigravity-handoff",
+    "new_confidence": "speculative",
+    "verdict": "KEEP",
+    "authoritative_source": null,
+    "note": "Placeholder source still unresolved; no official Antigravity docs found"
+  },
+  {
+    "id": "claude-code-mcp-server",
+    "new_confidence": "speculative",
+    "verdict": "DOWNGRADE",
+    "authoritative_source": null,
+    "note": "Core claim (claude mcp serve) cannot verify from official Anthropic docs"
+  },
+  {
+    "id": "mcp-applications",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+    "note": "MCP Apps/Tasks/Async verified from official MCP blog"
+  },
+  {
+    "id": "mcp-as-integration-layer",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": "https://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/",
+    "note": "Governance transition and adoption stats verified from MCP blog"
+  },
+  {
+    "id": "shared-context-file-handoff",
+    "new_confidence": "reported",
+    "verdict": "KEEP",
+    "authoritative_source": "https://github.com/gsailing19/agent-handoff",
+    "note": "Community-documented technique; multiple consistent sources"
+  }
+]

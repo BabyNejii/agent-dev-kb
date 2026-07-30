@@ -1,0 +1,4 @@
+# Normalize line endings so the repo is byte-stable across machines.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
