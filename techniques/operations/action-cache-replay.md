@@ -1,7 +1,7 @@
 ---
 id: action-cache-replay
 title: Action caching and deterministic replay for agent debugging and cost analysis
-category: eval
+category: operations
 ecosystems: [claude-code, claude-sdk, claude-api, generic]
 problem: "Agents exhibit non-deterministic behavior across runs; same prompt + context can yield different tool calls, making bugs hard to isolate and cost attribution impossible"
 maturity: emerging

@@ -25,8 +25,11 @@ _inbox/        quarantine for un-reviewed drafts     _verify/  verification audi
 .claude/commands/ingest.md               → the /ingest slash command
 ```
 
-Categories: `orchestration`, `context`, `workflow`, `integration`, `tooling`,
+Categories: `orchestration`, `context`, `workflow`, `integration`, `tooling`, `operations`,
 `prompting`, `eval`, `codebase-ops`.
+
+`tooling` vs `operations` is the easiest boundary to get wrong: `tooling` gives an agent more
+capability, `operations` keeps a run observable, bounded, and affordable. See `TAXONOMY.md`.
 
 ## How to do the common tasks
 

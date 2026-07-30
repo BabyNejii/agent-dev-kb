@@ -32,10 +32,17 @@ updated: 2026-07-28             # ISO date last changed
 - `context` — managing what's in the model's context: memory, retrieval, large codebases
 - `workflow` — end-to-end dev loops (plan → implement → review → test → iterate)
 - `integration` — making different agents/tools work together (Claude ↔ Antigravity, MCP, handoffs)
-- `tooling` — MCP servers, custom tools, wiring dev tools into an agent
+- `tooling` — giving an agent capabilities: MCP servers, tool design, custom subagents
+- `operations` — constraining and observing a run: telemetry, cost measurement and control,
+  guards, permissions, circuit breakers, reproducibility
 - `prompting` — instructions, CLAUDE.md, skills authoring, output shaping
 - `eval` — verifying agent output: review gates, tests, LLM-as-judge, adversarial checks
 - `codebase-ops` — large-scale code operations: refactors, migrations, test generation
+
+**`tooling` vs `operations`** is the boundary most likely to be got wrong. `tooling` is about
+giving an agent *more* capability; `operations` is about keeping a run observable, bounded, and
+affordable. A hook that teaches an agent a new trick is `tooling`; a hook that stops it deleting
+your database is `operations`.
 
 **ecosystems:** `claude-code`, `claude-sdk`, `claude-api`, `antigravity`, `mcp`, `generic`
 

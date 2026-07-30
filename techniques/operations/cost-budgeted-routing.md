@@ -1,7 +1,7 @@
 ---
 id: cost-budgeted-routing
 title: Cost-aware model routing with hard budget caps
-category: orchestration
+category: operations
 ecosystems: [claude-api, claude-sdk, generic]
 problem: "Unbounded agent execution wastes budget on overkill model choices; teams need runtime cost control to degrade gracefully or route to cheaper models when approaching limits"
 maturity: emerging

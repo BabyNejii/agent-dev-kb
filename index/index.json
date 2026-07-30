@@ -1,22 +1,18 @@
 [
   {
-    "effort_to_adopt": "high",
-    "title": "Meta-RAG Code Summarization for Large-Scale Migrations",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api"
-    ],
+    "updated": "2026-07-28",
+    "category": "codebase-ops",
     "works_with": [
       "phased-dependency-upgrade",
       "hybrid-codemod-agent-refactoring"
     ],
-    "added": "2026-07-28",
-    "category": "codebase-ops",
-    "updated": "2026-07-28",
+    "maturity": "experimental",
     "id": "code-summary-meta-rag",
+    "problem": "Large codebases exceed context windows; agents can't reason about 1M+ LOC projects in one pass",
+    "title": "Meta-RAG Code Summarization for Large-Scale Migrations",
     "sources": [
       {
         "url": "https://arxiv.org/html/2510.03480v2",
@@ -24,29 +20,29 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "experimental",
-    "problem": "Large codebases exceed context windows; agents can't reason about 1M+ LOC projects in one pass",
-    "path": "techniques/codebase-ops/code-summary-meta-rag.md"
-  },
-  {
-    "effort_to_adopt": "high",
-    "title": "Structural codebase optimization for agent reasoning efficiency",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
-      "generic"
+      "claude-api"
     ],
+    "effort_to_adopt": "high",
+    "path": "techniques/codebase-ops/code-summary-meta-rag.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-30",
+    "category": "codebase-ops",
     "works_with": [
       "code-summary-meta-rag",
       "hybrid-codemod-agent-refactoring",
       "safe-monolith-decomposition"
     ],
-    "added": "2026-07-30",
-    "category": "codebase-ops",
-    "updated": "2026-07-30",
+    "maturity": "emerging",
     "id": "codebase-agent-optimization",
+    "problem": "Agent reasoning degrades on codebases designed for humans; scattered symbols, deep nesting, and missing indices force agents to waste tokens on navigation and rediscovery",
+    "title": "Structural codebase optimization for agent reasoning efficiency",
     "sources": [
       {
         "url": "https://github.com/nibzard/awesome-agentic-patterns#tool-use--environment",
@@ -59,25 +55,25 @@
         "date": "2026-07-30"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Agent reasoning degrades on codebases designed for humans; scattered symbols, deep nesting, and missing indices force agents to waste tokens on navigation and rediscovery",
-    "path": "techniques/codebase-ops/codebase-agent-optimization.md"
-  },
-  {
-    "effort_to_adopt": "low",
-    "title": "Controlled Dead Code Removal with Language-Specific Linters",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
       "generic"
     ],
-    "works_with": [],
+    "effort_to_adopt": "high",
+    "path": "techniques/codebase-ops/codebase-agent-optimization.md"
+  },
+  {
     "added": "2026-07-28",
-    "category": "codebase-ops",
+    "supersedes": [],
+    "confidence": "reported",
     "updated": "2026-07-28",
+    "category": "codebase-ops",
+    "works_with": [],
+    "maturity": "emerging",
     "id": "controlled-dead-code-removal",
+    "problem": "Dead code accumulates; removing it without false positives requires careful tooling and verification",
+    "title": "Controlled Dead Code Removal with Language-Specific Linters",
     "sources": [
       {
         "url": "https://github.com/rohitg00/awesome-claude-code-toolkit/blob/main/commands/refactoring/dead-code.md",
@@ -90,24 +86,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Dead code accumulates; removing it without false positives requires careful tooling and verification",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "generic"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/codebase-ops/controlled-dead-code-removal.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Hybrid Codemod + Agent Approach for Large-Scale Refactoring",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk"
-    ],
-    "works_with": [],
-    "added": "2026-07-28",
-    "category": "codebase-ops",
     "updated": "2026-07-28",
+    "category": "codebase-ops",
+    "works_with": [],
+    "maturity": "emerging",
     "id": "hybrid-codemod-agent-refactoring",
+    "problem": "Pure agent approaches burn tokens/cost on repetitive file edits; pure codemods lack contextual reasoning",
+    "title": "Hybrid Codemod + Agent Approach for Large-Scale Refactoring",
     "sources": [
       {
         "url": "https://codemod.com/blog/npx-codemod-ai",
@@ -120,26 +117,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Pure agent approaches burn tokens/cost on repetitive file edits; pure codemods lack contextual reasoning",
-    "path": "techniques/codebase-ops/hybrid-codemod-agent-refactoring.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Phased Dependency Upgrades Across Large Codebases",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk"
     ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/codebase-ops/hybrid-codemod-agent-refactoring.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "codebase-ops",
     "works_with": [
       "hybrid-codemod-agent-refactoring"
     ],
-    "added": "2026-07-28",
-    "category": "codebase-ops",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "phased-dependency-upgrade",
+    "problem": "Major dependency upgrades cause cascading failures; undisciplined agent upgrades break production",
+    "title": "Phased Dependency Upgrades Across Large Codebases",
     "sources": [
       {
         "url": "https://medium.com/@mchathuranga4/use-of-claude-code-agents-in-mitigating-application-vulnerabilities-6c9371e19ee0",
@@ -162,24 +159,24 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Major dependency upgrades cause cascading failures; undisciplined agent upgrades break production",
-    "path": "techniques/codebase-ops/phased-dependency-upgrade.md"
-  },
-  {
-    "effort_to_adopt": "high",
-    "title": "Structured Workflow for Safe Monolith Decomposition",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk"
     ],
-    "works_with": [],
+    "effort_to_adopt": "medium",
+    "path": "techniques/codebase-ops/phased-dependency-upgrade.md"
+  },
+  {
     "added": "2026-07-28",
-    "category": "codebase-ops",
+    "supersedes": [],
+    "confidence": "reported",
     "updated": "2026-07-28",
+    "category": "codebase-ops",
+    "works_with": [],
+    "maturity": "emerging",
     "id": "safe-monolith-decomposition",
+    "problem": "Decomposing monoliths is high-risk; undisciplined refactoring causes hidden breakages",
+    "title": "Structured Workflow for Safe Monolith Decomposition",
     "sources": [
       {
         "url": "https://www.sitepoint.com/claude-code-refactoring-workflow/",
@@ -192,24 +189,24 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Decomposing monoliths is high-risk; undisciplined refactoring causes hidden breakages",
-    "path": "techniques/codebase-ops/safe-monolith-decomposition.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Subagent Orchestration for Bulk Test Generation",
-    "supersedes": [],
-    "confidence": "verified",
     "ecosystems": [
       "claude-code",
       "claude-sdk"
     ],
-    "works_with": [],
+    "effort_to_adopt": "high",
+    "path": "techniques/codebase-ops/safe-monolith-decomposition.md"
+  },
+  {
     "added": "2026-07-28",
-    "category": "codebase-ops",
+    "supersedes": [],
+    "confidence": "verified",
     "updated": "2026-07-28",
+    "category": "codebase-ops",
+    "works_with": [],
+    "maturity": "emerging",
     "id": "subagent-test-generation-bulk",
+    "problem": "Single agent degrades in quality over many iterations on large codebases; test generation stalls",
+    "title": "Subagent Orchestration for Bulk Test Generation",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/agent-sdk/subagents",
@@ -227,28 +224,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Single agent degrades in quality over many iterations on large codebases; test generation stalls",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/codebase-ops/subagent-test-generation-bulk.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Agent context as a managed lifecycle with validation",
+    "added": "2026-07-30",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-api",
-      "claude-sdk",
-      "generic"
-    ],
+    "updated": "2026-07-30",
+    "category": "context",
     "works_with": [
       "claude-code-context-window",
       "context-compaction-beta"
     ],
-    "added": "2026-07-30",
-    "category": "context",
-    "updated": "2026-07-30",
+    "maturity": "emerging",
     "id": "agent-context-lifecycle-management",
+    "problem": "Agent conversations accumulate context (turns, tool outputs, intermediate facts) with token cost growing quadratically; naive summarization compresses linearly but produces accuracy cliffs. Context needs staged management with fidelity validation.",
+    "title": "Agent context as a managed lifecycle with validation",
     "sources": [
       {
         "url": "https://arxiv.org/abs/2607.21503",
@@ -256,27 +252,27 @@
         "date": "2026-07-30"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Agent conversations accumulate context (turns, tool outputs, intermediate facts) with token cost growing quadratically; naive summarization compresses linearly but produces accuracy cliffs. Context needs staged management with fidelity validation.",
-    "path": "techniques/context/agent-context-lifecycle-management.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Agentic RAG with tool-based on-demand retrieval over vector search",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
-      "claude-code",
+      "claude-api",
       "claude-sdk",
       "generic"
     ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/context/agent-context-lifecycle-management.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "context",
     "works_with": [
       "prompt-caching-with-claude-api"
     ],
-    "added": "2026-07-28",
-    "category": "context",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "agentic-rag-tool-based-retrieval",
+    "problem": "Pre-computed vector embeddings don't scale to evolving codebases; large corpus RAG adds retrieval latency; traditional RAG can ground answers in incorrect documents",
+    "title": "Agentic RAG with tool-based on-demand retrieval over vector search",
     "sources": [
       {
         "url": "https://www.techment.com/blogs/rag-in-2026/",
@@ -294,25 +290,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Pre-computed vector embeddings don't scale to evolving codebases; large corpus RAG adds retrieval latency; traditional RAG can ground answers in incorrect documents",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/context/agentic-rag-tool-based-retrieval.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Auto memory for persistent learning across Claude Code sessions",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code"
-    ],
+    "updated": "2026-07-28",
+    "category": "context",
     "works_with": [
       "claude-md-persistent-memory"
     ],
-    "added": "2026-07-28",
-    "category": "context",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "auto-memory-for-claude-code",
+    "problem": "Claude forgets learnings across sessions (build commands, debugging patterns, test quirks); repeated discoveries waste tokens and time",
+    "title": "Auto memory for persistent learning across Claude Code sessions",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/memory",
@@ -325,28 +323,28 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Claude forgets learnings across sessions (build commands, debugging patterns, test quirks); repeated discoveries waste tokens and time",
-    "path": "techniques/context/auto-memory-for-claude-code.md"
-  },
-  {
-    "effort_to_adopt": "low",
-    "title": "Managing Claude Code's context window for long sessions",
-    "supersedes": [],
-    "confidence": "verified",
     "ecosystems": [
       "claude-code"
     ],
+    "effort_to_adopt": "low",
+    "path": "techniques/context/auto-memory-for-claude-code.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-28",
+    "category": "context",
     "works_with": [
       "claude-md-persistent-memory",
       "context-compaction-beta",
       "subagent-fan-out",
       "auto-memory-for-claude-code"
     ],
-    "added": "2026-07-28",
-    "category": "context",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "claude-code-context-window",
+    "problem": "Sessions accumulate context (files, CLAUDE.md, memory, tool output) and eventually approach limits; poor management wastes tokens or forces suboptimal trade-offs between scope and precision",
+    "title": "Managing Claude Code's context window for long sessions",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/context-window",
@@ -359,25 +357,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Sessions accumulate context (files, CLAUDE.md, memory, tool output) and eventually approach limits; poor management wastes tokens or forces suboptimal trade-offs between scope and precision",
-    "path": "techniques/context/claude-code-context-window.md"
-  },
-  {
-    "effort_to_adopt": "low",
-    "title": "CLAUDE.md files for persistent session memory",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code"
     ],
+    "effort_to_adopt": "low",
+    "path": "techniques/context/claude-code-context-window.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "context",
     "works_with": [
       "auto-memory-for-claude-code"
     ],
-    "added": "2026-07-28",
-    "category": "context",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "claude-md-persistent-memory",
+    "problem": "Each Claude Code session starts with empty context; repeating instructions, conventions, and project knowledge wastes tokens and causes Claude to re-learn the same patterns",
+    "title": "CLAUDE.md files for persistent session memory",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/memory",
@@ -390,26 +388,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Each Claude Code session starts with empty context; repeating instructions, conventions, and project knowledge wastes tokens and causes Claude to re-learn the same patterns",
+    "ecosystems": [
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/context/claude-md-persistent-memory.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Context compaction for long-running agent sessions",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-api",
-      "claude-code"
-    ],
+    "updated": "2026-07-28",
+    "category": "context",
     "works_with": [
       "prompt-caching-with-claude-api"
     ],
-    "added": "2026-07-28",
-    "category": "context",
-    "updated": "2026-07-28",
+    "maturity": "experimental",
     "id": "context-compaction-beta",
+    "problem": "Long conversations and multi-turn agentic loops accumulate history that pushes toward context window limits; users can't continue without manual intervention",
+    "title": "Context compaction for long-running agent sessions",
     "sources": [
       {
         "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
@@ -422,29 +419,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "experimental",
-    "problem": "Long conversations and multi-turn agentic loops accumulate history that pushes toward context window limits; users can't continue without manual intervention",
+    "ecosystems": [
+      "claude-api",
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/context/context-compaction-beta.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Filesystem as primary context layer for agents",
+    "added": "2026-07-30",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "generic"
-    ],
+    "updated": "2026-07-30",
+    "category": "context",
     "works_with": [
       "shared-context-file-handoff",
       "auto-memory-for-claude-code"
     ],
-    "added": "2026-07-30",
-    "category": "context",
-    "updated": "2026-07-30",
+    "maturity": "emerging",
     "id": "filesystem-context-management",
+    "problem": "Putting all context in the prompt creates token overhead, makes just-in-time discovery difficult, and scatters state across sessions",
+    "title": "Filesystem as primary context layer for agents",
     "sources": [
       {
         "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
@@ -457,60 +452,61 @@
         "date": "2026-07-30"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Putting all context in the prompt creates token overhead, makes just-in-time discovery difficult, and scatters state across sessions",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/context/filesystem-context-management.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Lost-in-middle mitigation — reordering context to preserve attention on critical tokens",
+    "added": "2026-07-30",
     "supersedes": [],
     "confidence": "reported",
+    "updated": "2026-07-30",
+    "category": "context",
+    "works_with": [
+      "context-compaction-beta",
+      "agentic-rag-tool-based-retrieval"
+    ],
+    "maturity": "emerging",
+    "id": "lost-in-middle-mitigation",
+    "problem": "Models lose focus on tokens in the middle of long contexts (U-shaped attention curve); critical information buried in the middle of 50K+ token contexts gets overlooked",
+    "title": "Lost-in-middle mitigation — reordering context to preserve attention on critical tokens",
+    "sources": [
+      {
+        "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+        "kind": "github",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://github.com/Meirtz/Awesome-Context-Engineering",
+        "kind": "github",
+        "date": "2026-07-30"
+      }
+    ],
     "ecosystems": [
       "claude-api",
       "claude-sdk",
       "claude-code",
       "generic"
     ],
-    "works_with": [
-      "context-compaction-beta",
-      "agentic-rag-tool-based-retrieval"
-    ],
-    "added": "2026-07-30",
-    "category": "context",
-    "updated": "2026-07-30",
-    "id": "lost-in-middle-mitigation",
-    "sources": [
-      {
-        "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
-        "kind": "github",
-        "date": "2026-07-30"
-      },
-      {
-        "url": "https://github.com/Meirtz/Awesome-Context-Engineering",
-        "kind": "github",
-        "date": "2026-07-30"
-      }
-    ],
-    "maturity": "emerging",
-    "problem": "Models lose focus on tokens in the middle of long contexts (U-shaped attention curve); critical information buried in the middle of 50K+ token contexts gets overlooked",
+    "effort_to_adopt": "medium",
     "path": "techniques/context/lost-in-middle-mitigation.md"
   },
   {
-    "effort_to_adopt": "high",
-    "title": "Use code APIs instead of tool definitions for MCP servers",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "mcp",
-      "claude-code",
-      "claude-sdk"
-    ],
-    "works_with": [],
-    "added": "2026-07-28",
-    "category": "context",
     "updated": "2026-07-28",
+    "category": "context",
+    "works_with": [],
+    "maturity": "emerging",
     "id": "mcp-code-api-over-tools",
+    "problem": "Loading all MCP tool definitions upfront consumes 25-72% of context window before any real work; agents need progressive disclosure of capabilities",
+    "title": "Use code APIs instead of tool definitions for MCP servers",
     "sources": [
       {
         "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
@@ -523,30 +519,29 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Loading all MCP tool definitions upfront consumes 25-72% of context window before any real work; agents need progressive disclosure of capabilities",
+    "ecosystems": [
+      "mcp",
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "high",
     "path": "techniques/context/mcp-code-api-over-tools.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Progressive disclosure — load context names first, full content on demand",
+    "added": "2026-07-30",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "generic"
-    ],
+    "updated": "2026-07-30",
+    "category": "context",
     "works_with": [
       "mcp-code-api-over-tools",
       "prompt-caching-with-claude-api",
       "filesystem-context-management"
     ],
-    "added": "2026-07-30",
-    "category": "context",
-    "updated": "2026-07-30",
+    "maturity": "emerging",
     "id": "progressive-disclosure-lazy-context",
+    "problem": "Loading all context upfront (all skill definitions, complete tool schemas, full documentation) wastes tokens on content agents may never use",
+    "title": "Progressive disclosure — load context names first, full content on demand",
     "sources": [
       {
         "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
@@ -559,25 +554,28 @@
         "date": "2026-07-30"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Loading all context upfront (all skill definitions, complete tool schemas, full documentation) wastes tokens on content agents may never use",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/context/progressive-disclosure-lazy-context.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Prompt caching to reduce API costs and latency",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-api"
-    ],
+    "updated": "2026-07-28",
+    "category": "context",
     "works_with": [
       "instruction-hierarchy-layering"
     ],
-    "added": "2026-07-28",
-    "category": "context",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "prompt-caching-with-claude-api",
+    "problem": "Long, repetitive prompts (system instructions, large contexts) re-sent on every request waste tokens and latency",
+    "title": "Prompt caching to reduce API costs and latency",
     "sources": [
       {
         "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
@@ -590,64 +588,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Long, repetitive prompts (system instructions, large contexts) re-sent on every request waste tokens and latency",
+    "ecosystems": [
+      "claude-api"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/context/prompt-caching-with-claude-api.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Action caching and deterministic replay for agent debugging and cost analysis",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "generic"
-    ],
-    "works_with": [
-      "adversarial-code-review",
-      "llm-as-judge-multi-tier",
-      "self-critique-reflection-loop"
-    ],
-    "added": "2026-07-30",
+    "updated": "2026-07-28",
     "category": "eval",
-    "updated": "2026-07-30",
-    "id": "action-cache-replay",
-    "sources": [
-      {
-        "url": "https://github.com/nibzard/awesome-agentic-patterns#reliability--eval",
-        "kind": "github",
-        "date": "2026-07-30"
-      },
-      {
-        "url": "https://github.com/ai-boost/awesome-harness-engineering#design-primitives-1",
-        "kind": "github",
-        "date": "2026-07-30"
-      }
-    ],
-    "maturity": "emerging",
-    "problem": "Agents exhibit non-deterministic behavior across runs; same prompt + context can yield different tool calls, making bugs hard to isolate and cost attribution impossible",
-    "path": "techniques/eval/action-cache-replay.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Adversarial code review with fresh-context verifier agents",
-    "supersedes": [],
-    "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "antigravity"
-    ],
     "works_with": [
       "llm-as-judge-multi-tier"
     ],
-    "added": "2026-07-28",
-    "category": "eval",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "adversarial-code-review",
+    "problem": "Agents cannot reliably review their own code; same-context verification misses bugs",
+    "title": "Adversarial code review with fresh-context verifier agents",
     "sources": [
       {
         "url": "https://www.augmentcode.com/guides/adversarial-code-review",
@@ -660,26 +619,28 @@
         "date": "2026-04-16"
       }
     ],
-    "maturity": "established",
-    "problem": "Agents cannot reliably review their own code; same-context verification misses bugs",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "antigravity"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/eval/adversarial-code-review.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Preventing Claude from inventing non-existent APIs",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-api"
-    ],
+    "updated": "2026-07-28",
+    "category": "eval",
     "works_with": [
       "schema-validation-gates"
     ],
-    "added": "2026-07-28",
-    "category": "eval",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "api-hallucination-prevention",
+    "problem": "Claude generates code calling methods that don't exist, especially for unfamiliar libraries",
+    "title": "Preventing Claude from inventing non-existent APIs",
     "sources": [
       {
         "url": "https://docs.bswen.com/blog/2026-03-22-claude-code-api-hallucination-fix/",
@@ -692,27 +653,26 @@
         "date": "2026-02-15"
       }
     ],
-    "maturity": "established",
-    "problem": "Claude generates code calling methods that don't exist, especially for unfamiliar libraries",
+    "ecosystems": [
+      "claude-code",
+      "claude-api"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/eval/api-hallucination-prevention.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Tiered LLM-as-judge architecture for cost-efficient code evaluation",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api"
-    ],
+    "updated": "2026-07-30",
+    "category": "eval",
     "works_with": [
       "adversarial-code-review"
     ],
-    "added": "2026-07-28",
-    "category": "eval",
-    "updated": "2026-07-30",
+    "maturity": "established",
     "id": "llm-as-judge-multi-tier",
+    "problem": "Single-model judges are expensive at scale; need cost-effective frontline filtering",
+    "title": "Tiered LLM-as-judge architecture for cost-efficient code evaluation",
     "sources": [
       {
         "url": "https://zylos.ai/research/2026-04-10-llm-as-judge-production-agent-verification-2026/",
@@ -730,24 +690,25 @@
         "date": "2025-12-20"
       }
     ],
-    "maturity": "established",
-    "problem": "Single-model judges are expensive at scale; need cost-effective frontline filtering",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/eval/llm-as-judge-multi-tier.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Mutation testing to verify AI-generated test quality",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk"
-    ],
-    "works_with": [],
-    "added": "2026-07-28",
-    "category": "eval",
     "updated": "2026-07-28",
+    "category": "eval",
+    "works_with": [],
+    "maturity": "emerging",
     "id": "mutation-testing-agent-code",
+    "problem": "AI-generated tests reach high coverage but have weak assertions; mutations expose gaps",
+    "title": "Mutation testing to verify AI-generated test quality",
     "sources": [
       {
         "url": "https://www.augmentcode.com/guides/mutation-testing-ai-generated-code",
@@ -760,28 +721,27 @@
         "date": "2025-10-15"
       }
     ],
-    "maturity": "emerging",
-    "problem": "AI-generated tests reach high coverage but have weak assertions; mutations expose gaps",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/eval/mutation-testing-agent-code.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Schema validation and deterministic checks as first-line verification gates",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api"
-    ],
+    "updated": "2026-07-30",
+    "category": "eval",
     "works_with": [
       "llm-as-judge-multi-tier",
       "api-hallucination-prevention"
     ],
-    "added": "2026-07-28",
-    "category": "eval",
-    "updated": "2026-07-30",
+    "maturity": "established",
     "id": "schema-validation-gates",
+    "problem": "Many hallucinations can be caught mechanically before running LLM judges without expensive inference",
+    "title": "Schema validation and deterministic checks as first-line verification gates",
     "sources": [
       {
         "url": "https://zylos.ai/research/2026-04-10-llm-as-judge-production-agent-verification-2026/",
@@ -794,27 +754,27 @@
         "date": "2026-02-15"
       }
     ],
-    "maturity": "established",
-    "problem": "Many hallucinations can be caught mechanically before running LLM judges without expensive inference",
-    "path": "techniques/eval/schema-validation-gates.md"
-  },
-  {
-    "effort_to_adopt": "low",
-    "title": "Self-critique reflection loops for agent code generation",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
       "claude-api"
     ],
+    "effort_to_adopt": "low",
+    "path": "techniques/eval/schema-validation-gates.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "eval",
     "works_with": [
       "llm-as-judge-multi-tier"
     ],
-    "added": "2026-07-28",
-    "category": "eval",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "self-critique-reflection-loop",
+    "problem": "First-draft agent output often has fixable errors; iteration improves quality",
+    "title": "Self-critique reflection loops for agent code generation",
     "sources": [
       {
         "url": "https://www.taskade.com/blog/self-improving-ai-agents-reflection",
@@ -827,26 +787,28 @@
         "date": "2026-03-15"
       }
     ],
-    "maturity": "established",
-    "problem": "First-draft agent output often has fixable errors; iteration improves quality",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/eval/self-critique-reflection-loop.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Antigravity Agent Manager for multi-agent orchestration",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "antigravity"
-    ],
+    "updated": "2026-07-28",
+    "category": "integration",
     "works_with": [
       "mcp-as-integration-layer",
       "shared-context-file-handoff"
     ],
-    "added": "2026-07-28",
-    "category": "integration",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "antigravity-agent-manager",
+    "problem": "Running multiple agents in parallel requires manual coordination; no unified view of progress or async task delegation",
+    "title": "Antigravity Agent Manager for multi-agent orchestration",
     "sources": [
       {
         "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/",
@@ -864,27 +826,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Running multiple agents in parallel requires manual coordination; no unified view of progress or async task delegation",
+    "ecosystems": [
+      "antigravity"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/integration/antigravity-agent-manager.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Claude ↔ Antigravity task handoff",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "speculative",
-    "ecosystems": [
-      "claude-code",
-      "antigravity"
-    ],
+    "updated": "2026-07-28",
+    "category": "integration",
     "works_with": [
       "shared-context-file-handoff",
       "mcp-as-integration-layer"
     ],
-    "added": "2026-07-28",
-    "category": "integration",
-    "updated": "2026-07-28",
+    "maturity": "experimental",
     "id": "claude-antigravity-handoff",
+    "problem": "You use both Claude Code and Antigravity CLI, but work and context don't flow between them, so you re-explain the task in each.",
+    "title": "Claude ↔ Antigravity task handoff",
     "sources": [
       {
         "url": "REPLACE-with-antigravity-docs",
@@ -892,26 +853,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "experimental",
-    "problem": "You use both Claude Code and Antigravity CLI, but work and context don't flow between them, so you re-explain the task in each.",
+    "ecosystems": [
+      "claude-code",
+      "antigravity"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/integration/claude-antigravity-handoff.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Claude Code as an MCP server (exposing tools to other agents)",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "speculative",
-    "ecosystems": [
-      "claude-code",
-      "mcp"
-    ],
+    "updated": "2026-07-28",
+    "category": "integration",
     "works_with": [
       "mcp-as-integration-layer"
     ],
-    "added": "2026-07-28",
-    "category": "integration",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "claude-code-mcp-server",
+    "problem": "Other agents can't access Claude Code's capabilities (file editing, bash, codebase search) directly",
+    "title": "Claude Code as an MCP server (exposing tools to other agents)",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/mcp",
@@ -924,25 +885,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Other agents can't access Claude Code's capabilities (file editing, bash, codebase search) directly",
+    "ecosystems": [
+      "claude-code",
+      "mcp"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/integration/claude-code-mcp-server.md"
   },
   {
-    "effort_to_adopt": "high",
-    "title": "MCP Applications for structured agent task automation",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "mcp"
-    ],
+    "updated": "2026-07-28",
+    "category": "integration",
     "works_with": [
       "mcp-as-integration-layer"
     ],
-    "added": "2026-07-28",
-    "category": "integration",
-    "updated": "2026-07-28",
+    "maturity": "experimental",
     "id": "mcp-applications",
+    "problem": "Simple tool calls don't capture rich agent workflows; MCP Apps provides semantics for multi-step tasks, async execution, and agent communication",
+    "title": "MCP Applications for structured agent task automation",
     "sources": [
       {
         "url": "https://toloka.ai/blog/the-future-of-mcp-enterprise-adoption/",
@@ -955,28 +917,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "experimental",
-    "problem": "Simple tool calls don't capture rich agent workflows; MCP Apps provides semantics for multi-step tasks, async execution, and agent communication",
+    "ecosystems": [
+      "mcp"
+    ],
+    "effort_to_adopt": "high",
     "path": "techniques/integration/mcp-applications.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "MCP as the universal integration layer for agent tooling",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "mcp"
-    ],
+    "updated": "2026-07-28",
+    "category": "integration",
     "works_with": [
       "mcp-applications"
     ],
-    "added": "2026-07-28",
-    "category": "integration",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "mcp-as-integration-layer",
+    "problem": "Every agent needs custom integrations to each tool; MCP standardizes how agents talk to external systems",
+    "title": "MCP as the universal integration layer for agent tooling",
     "sources": [
       {
         "url": "https://modelcontextprotocol.io/introduction",
@@ -994,27 +953,29 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Every agent needs custom integrations to each tool; MCP standardizes how agents talk to external systems",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "mcp"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/integration/mcp-as-integration-layer.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Shared context file (HANDOFF.md) for agent state passing",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "generic"
-    ],
+    "updated": "2026-07-28",
+    "category": "integration",
     "works_with": [
       "git-worktree-isolation",
       "claude-antigravity-handoff"
     ],
-    "added": "2026-07-28",
-    "category": "integration",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "shared-context-file-handoff",
+    "problem": "Sequential agents lack shared state; context is lost or re-explained on each session",
+    "title": "Shared context file (HANDOFF.md) for agent state passing",
     "sources": [
       {
         "url": "https://github.com/gsailing19/agent-handoff/tree/main/",
@@ -1037,27 +998,377 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Sequential agents lack shared state; context is lost or re-explained on each session",
+    "ecosystems": [
+      "claude-code",
+      "generic"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/integration/shared-context-file-handoff.md"
   },
   {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "adversarial-code-review",
+      "llm-as-judge-multi-tier",
+      "self-critique-reflection-loop"
+    ],
+    "maturity": "emerging",
+    "id": "action-cache-replay",
+    "problem": "Agents exhibit non-deterministic behavior across runs; same prompt + context can yield different tool calls, making bugs hard to isolate and cost attribution impossible",
+    "title": "Action caching and deterministic replay for agent debugging and cost analysis",
+    "sources": [
+      {
+        "url": "https://github.com/nibzard/awesome-agentic-patterns#reliability--eval",
+        "kind": "github",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://github.com/ai-boost/awesome-harness-engineering#design-primitives-1",
+        "kind": "github",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "generic"
+    ],
     "effort_to_adopt": "medium",
-    "title": "Agent Teams for parallel peer coordination",
+    "path": "techniques/operations/action-cache-replay.md"
+  },
+  {
+    "added": "2026-07-30",
     "supersedes": [],
     "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "cost-budgeted-routing",
+      "token-counting-api-preflighting"
+    ],
+    "maturity": "established",
+    "id": "admin-cost-report-api",
+    "problem": "Multi-team or multi-project organizations can't see which models, agents, or projects consumed how much, making cost attribution and budgeting invisible",
+    "title": "Admin Cost Report API for organization-wide spend tracking",
+    "sources": [
+      {
+        "url": "https://platform.claude.com/docs/en/api/admin/cost_report/retrieve",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-api"
+    ],
+    "effort_to_adopt": "low",
+    "path": "techniques/operations/admin-cost-report-api.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "multi-agent-cost-attribution-sdk",
+      "claude-code-jsonl-session-logs"
+    ],
+    "maturity": "established",
+    "id": "agent-sdk-otel-observability",
+    "problem": "Running agents without observability means you cannot see what they're doing, where they fail, or how much they're costing in production",
+    "title": "OpenTelemetry observability for Agent SDK deployments",
+    "sources": [
+      {
+        "url": "https://code.claude.com/docs/en/agent-sdk/observability",
+        "kind": "docs",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://code.claude.com/docs/en/monitoring-usage",
+        "kind": "docs",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://platform.claude.com/docs/en/managed-agents/observability",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-sdk",
+      "claude-code",
+      "claude-api"
+    ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/operations/agent-sdk-otel-observability.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "cost-budgeted-routing",
+      "token-counting-api-preflighting"
+    ],
+    "maturity": "established",
+    "id": "batch-api-cost-reduction",
+    "problem": "High-volume inference (evals, bulk processing, migrations) is expensive; teams pay full price even for asynchronous operations where latency doesn't matter",
+    "title": "Batch API for 50% cost reduction on high-volume inference",
+    "sources": [
+      {
+        "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
+        "kind": "docs",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://platform.claude.com/docs/en/api/beta/messages/batches/create",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-api",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/operations/batch-api-cost-reduction.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "agent-sdk-otel-observability",
+      "multi-agent-cost-attribution-sdk",
+      "action-cache-replay"
+    ],
+    "maturity": "established",
+    "id": "claude-code-jsonl-session-logs",
+    "problem": "When an agent misbehaves or costs spike, there is no local record of what it did, what tokens it spent, or what decisions it made",
+    "title": "Local JSONL session logging for agent debugging and cost analysis",
+    "sources": [
+      {
+        "url": "https://code.claude.com/docs/en/monitoring-usage",
+        "kind": "docs",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://code.claude.com/docs/en/costs",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
     "ecosystems": [
       "claude-code",
       "claude-sdk"
     ],
+    "effort_to_adopt": "low",
+    "path": "techniques/operations/claude-code-jsonl-session-logs.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "supervisor-pattern",
+      "planner-executor-loop",
+      "llm-as-judge-multi-tier"
+    ],
+    "maturity": "emerging",
+    "id": "cost-budgeted-routing",
+    "problem": "Unbounded agent execution wastes budget on overkill model choices; teams need runtime cost control to degrade gracefully or route to cheaper models when approaching limits",
+    "title": "Cost-aware model routing with hard budget caps",
+    "sources": [
+      {
+        "url": "https://github.com/nibzard/awesome-agentic-patterns#orchestration--control",
+        "kind": "github",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://github.com/ai-boost/awesome-harness-engineering#design-primitives-1",
+        "kind": "github",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-api",
+      "claude-sdk",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/operations/cost-budgeted-routing.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "agent-sdk-otel-observability",
+      "cost-budgeted-routing"
+    ],
+    "maturity": "emerging",
+    "id": "multi-agent-cost-attribution-sdk",
+    "problem": "When you run multiple subagents or parallel tasks, total cost is visible but per-agent or per-task attribution is opaque, blocking cost optimization and billing allocation",
+    "title": "Per-session cost tracking for multi-agent deployments",
+    "sources": [
+      {
+        "url": "https://platform.claude.com/docs/en/agent-sdk/cost-tracking",
+        "kind": "docs",
+        "date": "2026-07-30"
+      },
+      {
+        "url": "https://github.com/nibzard/awesome-agentic-patterns#orchestration--control",
+        "kind": "github",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-sdk",
+      "claude-api"
+    ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/operations/multi-agent-cost-attribution-sdk.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "pretooluse-guards-dangerous-operations",
+      "human-in-loop-review"
+    ],
+    "maturity": "emerging",
+    "id": "permission-deny-rules-resource-isolation",
+    "problem": "Agents can read any file (secrets, credentials), run any command, access any service without hard limits; difficult to sandbox untrusted or multi-tenant agents",
+    "title": "Permission deny rules for hard resource and capability isolation",
+    "sources": [
+      {
+        "url": "https://code.claude.com/docs/en/settings",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
+    "path": "techniques/operations/permission-deny-rules-resource-isolation.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "subagent-fan-out",
+      "supervisor-pattern",
+      "pretooluse-guards-dangerous-operations"
+    ],
+    "maturity": "emerging",
+    "id": "postoolbatch-circuit-breaker-parallel-tasks",
+    "problem": "When agents fan out many parallel tool calls, a single failure or pattern of failures can cascade; the agent keeps retrying each branch instead of recognizing the systematic problem and stopping.",
+    "title": "PostToolBatch circuit breaker to halt agent loops on cascading parallel failures",
+    "sources": [
+      {
+        "url": "https://code.claude.com/docs/en/hooks",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/operations/postoolbatch-circuit-breaker-parallel-tasks.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "mcp-error-handling-model-recovery",
+      "schema-validation-gates"
+    ],
+    "maturity": "emerging",
+    "id": "pretooluse-guards-dangerous-operations",
+    "problem": "Agents invoke destructive operations (rm -rf, git push, database deletes) without safeguards; no way to block or audit before execution happens",
+    "title": "PreToolUse hooks to guard dangerous operations before execution",
+    "sources": [
+      {
+        "url": "https://code.claude.com/docs/en/hooks",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "low",
+    "path": "techniques/operations/pretooluse-guards-dangerous-operations.md"
+  },
+  {
+    "added": "2026-07-30",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-30",
+    "category": "operations",
+    "works_with": [
+      "cost-budgeted-routing",
+      "batch-api-cost-reduction"
+    ],
+    "maturity": "established",
+    "id": "token-counting-api-preflighting",
+    "problem": "You can't estimate token usage before sending a request, so you can't budget or prevent overspending on expensive operations",
+    "title": "Token counting API for pre-request cost estimation",
+    "sources": [
+      {
+        "url": "https://platform.claude.com/docs/en/api/beta/messages/count_tokens",
+        "kind": "docs",
+        "date": "2026-07-30"
+      }
+    ],
+    "ecosystems": [
+      "claude-api",
+      "claude-sdk",
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
+    "path": "techniques/operations/token-counting-api-preflighting.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-28",
+    "category": "orchestration",
     "works_with": [
       "supervisor-pattern",
       "git-worktree-isolation"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "agent-teams-coordination",
+    "problem": "Subagents work in isolation with parent-child messaging only; need peer-to-peer coordination between agents on same codebase.",
+    "title": "Agent Teams for parallel peer coordination",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/agent-teams",
@@ -1080,62 +1391,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Subagents work in isolation with parent-child messaging only; need peer-to-peer coordination between agents on same codebase.",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/orchestration/agent-teams-coordination.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Cost-aware model routing with hard budget caps",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-api",
-      "claude-sdk",
-      "generic"
-    ],
-    "works_with": [
-      "supervisor-pattern",
-      "planner-executor-loop",
-      "llm-as-judge-multi-tier"
-    ],
-    "added": "2026-07-30",
+    "updated": "2026-07-28",
     "category": "orchestration",
-    "updated": "2026-07-30",
-    "id": "cost-budgeted-routing",
-    "sources": [
-      {
-        "url": "https://github.com/nibzard/awesome-agentic-patterns#orchestration--control",
-        "kind": "github",
-        "date": "2026-07-30"
-      },
-      {
-        "url": "https://github.com/ai-boost/awesome-harness-engineering#design-primitives-1",
-        "kind": "github",
-        "date": "2026-07-30"
-      }
-    ],
-    "maturity": "emerging",
-    "problem": "Unbounded agent execution wastes budget on overkill model choices; teams need runtime cost control to degrade gracefully or route to cheaper models when approaching limits",
-    "path": "techniques/orchestration/cost-budgeted-routing.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Debate pattern for multi-perspective verification",
-    "supersedes": [],
-    "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "generic"
-    ],
     "works_with": [
       "subagent-fan-out"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "debate-pattern",
+    "problem": "Single agent review misses classes of issues (security, performance, tests); need independent perspectives on same code.",
+    "title": "Debate pattern for multi-perspective verification",
     "sources": [
       {
         "url": "https://www.tembo.io/blog/claude-code-multi-agent-orchestration",
@@ -1153,28 +1428,29 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Single agent review misses classes of issues (security, performance, tests); need independent perspectives on same code.",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/orchestration/debate-pattern.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Git worktree per-agent isolation for parallel development",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "generic"
-    ],
+    "updated": "2026-07-30",
+    "category": "orchestration",
     "works_with": [
       "agent-teams-coordination",
       "supervisor-pattern",
       "shared-context-file-handoff"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-30",
+    "maturity": "established",
     "id": "git-worktree-isolation",
+    "problem": "Multiple agents on same branch collide on file writes; need per-agent isolated working directories.",
+    "title": "Git worktree per-agent isolation for parallel development",
     "sources": [
       {
         "url": "https://www.augmentcode.com/guides/git-worktrees-parallel-ai-agent-execution",
@@ -1197,29 +1473,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Multiple agents on same branch collide on file writes; need per-agent isolated working directories.",
+    "ecosystems": [
+      "claude-code",
+      "generic"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/orchestration/git-worktree-isolation.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "MCP for standardized tool coordination across agents",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "mcp",
-      "generic"
-    ],
+    "updated": "2026-07-28",
+    "category": "orchestration",
     "works_with": [
       "supervisor-pattern",
       "agent-teams-coordination"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "mcp-tool-standardization",
+    "problem": "Each agent reimplements tool integrations; need standardized, reusable tool interface across agent network.",
+    "title": "MCP for standardized tool coordination across agents",
     "sources": [
       {
         "url": "https://modelcontextprotocol.io/specification/2025-03-26",
@@ -1247,27 +1521,28 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Each agent reimplements tool integrations; need standardized, reusable tool interface across agent network.",
-    "path": "techniques/orchestration/mcp-tool-standardization.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Planner-executor loop for iterative code generation",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
+      "mcp",
       "generic"
     ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/orchestration/mcp-tool-standardization.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "orchestration",
     "works_with": [
       "supervisor-pattern"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "planner-executor-loop",
+    "problem": "Large code-generation tasks fail when agent tries to write and test in a single pass; need separate planning and execution phases.",
+    "title": "Planner-executor loop for iterative code generation",
     "sources": [
       {
         "url": "https://www.emergentmind.com/topics/planner-executor-architecture-4c9e0097-fe2b-4870-b41c-9519c49a07c8",
@@ -1290,27 +1565,28 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Large code-generation tasks fail when agent tries to write and test in a single pass; need separate planning and execution phases.",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/orchestration/planner-executor-loop.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Sub-agent fan-out for parallel exploration & review",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk"
-    ],
+    "updated": "2026-07-28",
+    "category": "orchestration",
     "works_with": [
       "supervisor-pattern",
       "adversarial-code-review"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "subagent-fan-out",
+    "problem": "A single agent's context fills up and serializes work that is naturally parallel (searching many files, reviewing many dimensions).",
+    "title": "Sub-agent fan-out for parallel exploration & review",
     "sources": [
       {
         "url": "https://docs.claude.com/en/docs/claude-code",
@@ -1318,28 +1594,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "A single agent's context fills up and serializes work that is naturally parallel (searching many files, reviewing many dimensions).",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/orchestration/subagent-fan-out.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Supervisor pattern for hierarchical task decomposition",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "generic"
-    ],
+    "updated": "2026-07-28",
+    "category": "orchestration",
     "works_with": [
       "planner-executor-loop",
       "subagent-fan-out"
     ],
-    "added": "2026-07-28",
-    "category": "orchestration",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "supervisor-pattern",
+    "problem": "Complex tasks overwhelm a single agent's context; need centralized task decomposition with specialized workers.",
+    "title": "Supervisor pattern for hierarchical task decomposition",
     "sources": [
       {
         "url": "https://fast.io/resources/ai-agent-supervisor-pattern/",
@@ -1362,54 +1637,55 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Complex tasks overwhelm a single agent's context; need centralized task decomposition with specialized workers.",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "generic"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/orchestration/supervisor-pattern.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Few-shot examples anchor format and behavior",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
+    "updated": "2026-07-28",
+    "category": "prompting",
+    "works_with": [
+      "xml-structured-prompting"
+    ],
+    "maturity": "established",
+    "id": "few-shot-examples",
+    "problem": "Instructions alone don't reliably guide output format, tone, or edge-case handling",
+    "title": "Few-shot examples anchor format and behavior",
+    "sources": [
+      {
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+        "kind": "docs",
+        "date": "2026-07-28"
+      }
+    ],
     "ecosystems": [
       "claude-api",
       "claude-sdk",
       "claude-code"
     ],
-    "works_with": [
-      "xml-structured-prompting"
-    ],
-    "added": "2026-07-28",
-    "category": "prompting",
-    "updated": "2026-07-28",
-    "id": "few-shot-examples",
-    "sources": [
-      {
-        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
-        "kind": "docs",
-        "date": "2026-07-28"
-      }
-    ],
-    "maturity": "established",
-    "problem": "Instructions alone don't reliably guide output format, tone, or edge-case handling",
+    "effort_to_adopt": "low",
     "path": "techniques/prompting/few-shot-examples.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Instruction hierarchy across CLAUDE.md, system prompt, and skills",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk"
-    ],
+    "updated": "2026-07-28",
+    "category": "prompting",
     "works_with": [
       "prompt-caching-with-claude-api"
     ],
-    "added": "2026-07-28",
-    "category": "prompting",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "instruction-hierarchy-layering",
+    "problem": "Conflicting or scattered instructions cause agent behavior inconsistency",
+    "title": "Instruction hierarchy across CLAUDE.md, system prompt, and skills",
     "sources": [
       {
         "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
@@ -1417,25 +1693,24 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Conflicting or scattered instructions cause agent behavior inconsistency",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/prompting/instruction-hierarchy-layering.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "When negative instructions work (and when they fail)",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-api",
-      "claude-sdk"
-    ],
-    "works_with": [],
-    "added": "2026-07-28",
-    "category": "prompting",
     "updated": "2026-07-28",
+    "category": "prompting",
+    "works_with": [],
+    "maturity": "established",
     "id": "negative-instructions-effectiveness",
+    "problem": "\"Do not\" instructions sometimes work, sometimes fail to prevent unwanted behavior",
+    "title": "When negative instructions work (and when they fail)",
     "sources": [
       {
         "url": "https://eval.16x.engineer/blog/the-pink-elephant-negative-instructions-llms-effectiveness-analysis",
@@ -1448,26 +1723,28 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "\"Do not\" instructions sometimes work, sometimes fail to prevent unwanted behavior",
+    "ecosystems": [
+      "claude-code",
+      "claude-api",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/prompting/negative-instructions-effectiveness.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Path-scoped rules for directory and file-type instructions",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-code"
-    ],
+    "updated": "2026-07-28",
+    "category": "prompting",
     "works_with": [
       "instruction-hierarchy-layering",
       "claude-md-persistent-memory"
     ],
-    "added": "2026-07-28",
-    "category": "prompting",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "path-scoped-rules",
+    "problem": "Large CLAUDE.md files consume tokens in every session; rules should load only when relevant to current work",
+    "title": "Path-scoped rules for directory and file-type instructions",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/",
@@ -1485,24 +1762,23 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Large CLAUDE.md files consume tokens in every session; rules should load only when relevant to current work",
+    "ecosystems": [
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/prompting/path-scoped-rules.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Structured outputs for guaranteed schema compliance",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-api",
-      "claude-sdk"
-    ],
-    "works_with": [],
-    "added": "2026-07-28",
-    "category": "prompting",
     "updated": "2026-07-28",
+    "category": "prompting",
+    "works_with": [],
+    "maturity": "established",
     "id": "structured-outputs-api",
+    "problem": "Prompt-only JSON constraints allow malformed output, invalid fields, type errors",
+    "title": "Structured outputs for guaranteed schema compliance",
     "sources": [
       {
         "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
@@ -1510,27 +1786,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Prompt-only JSON constraints allow malformed output, invalid fields, type errors",
+    "ecosystems": [
+      "claude-api",
+      "claude-sdk"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/prompting/structured-outputs-api.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "XML tags for unambiguous prompt structure",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-api",
-      "claude-sdk",
-      "claude-code"
-    ],
+    "updated": "2026-07-28",
+    "category": "prompting",
     "works_with": [
       "few-shot-examples"
     ],
-    "added": "2026-07-28",
-    "category": "prompting",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "xml-structured-prompting",
+    "problem": "Long prompts mixing instructions, context, examples, and inputs cause misinterpretation",
+    "title": "XML tags for unambiguous prompt structure",
     "sources": [
       {
         "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags",
@@ -1543,23 +1818,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Long prompts mixing instructions, context, examples, and inputs cause misinterpretation",
+    "ecosystems": [
+      "claude-api",
+      "claude-sdk",
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/prompting/xml-structured-prompting.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Building Custom Subagents for Focused Tasks",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-code"
-    ],
-    "works_with": [],
-    "added": "2026-07-28",
-    "category": "tooling",
     "updated": "2026-07-28",
+    "category": "tooling",
+    "works_with": [],
+    "maturity": "established",
     "id": "building-custom-subagents",
+    "problem": "Large tasks flood main context with exploration noise; subagents preserve context by delegating focused work.",
+    "title": "Building Custom Subagents for Focused Tasks",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/sub-agents",
@@ -1572,23 +1849,23 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Large tasks flood main context with exploration noise; subagents preserve context by delegating focused work.",
-    "path": "techniques/tooling/building-custom-subagents.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Claude Code Hooks for Tool Automation and Control",
-    "supersedes": [],
-    "confidence": "verified",
     "ecosystems": [
       "claude-code"
     ],
-    "works_with": [],
+    "effort_to_adopt": "low",
+    "path": "techniques/tooling/building-custom-subagents.md"
+  },
+  {
     "added": "2026-07-28",
-    "category": "tooling",
+    "supersedes": [],
+    "confidence": "verified",
     "updated": "2026-07-28",
+    "category": "tooling",
+    "works_with": [],
+    "maturity": "established",
     "id": "claude-code-hooks-tool-lifecycle",
+    "problem": "Manual tool governance is tedious; hooks automate enforcement, formatting, and safety gates without blocking workflow.",
+    "title": "Claude Code Hooks for Tool Automation and Control",
     "sources": [
       {
         "url": "https://code.claude.com/docs/en/hooks",
@@ -1601,26 +1878,25 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Manual tool governance is tedious; hooks automate enforcement, formatting, and safety gates without blocking workflow.",
+    "ecosystems": [
+      "claude-code"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/tooling/claude-code-hooks-tool-lifecycle.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Tool Naming and Descriptions for Accurate Agent Routing",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "verified",
-    "ecosystems": [
-      "claude-code",
-      "claude-api"
-    ],
+    "updated": "2026-07-28",
+    "category": "tooling",
     "works_with": [
       "mcp-tool-design-principles"
     ],
-    "added": "2026-07-28",
-    "category": "tooling",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "claude-tool-naming-descriptions",
+    "problem": "Ambiguous tool names and vague descriptions cause agents to misroute, pick wrong tools, or waste tokens deciding.",
+    "title": "Tool Naming and Descriptions for Accurate Agent Routing",
     "sources": [
       {
         "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools",
@@ -1633,28 +1909,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Ambiguous tool names and vague descriptions cause agents to misroute, pick wrong tools, or waste tokens deciding.",
-    "path": "techniques/tooling/claude-tool-naming-descriptions.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "MCP Error Handling for Model Self-Correction",
-    "supersedes": [],
-    "confidence": "verified",
     "ecosystems": [
-      "mcp",
       "claude-code",
       "claude-api"
     ],
+    "effort_to_adopt": "low",
+    "path": "techniques/tooling/claude-tool-naming-descriptions.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-28",
+    "category": "tooling",
     "works_with": [
       "mcp-tool-design-principles",
       "claude-tool-naming-descriptions"
     ],
-    "added": "2026-07-28",
-    "category": "tooling",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "mcp-error-handling-model-recovery",
+    "problem": "Unhandled tool errors crash agents; structured errors enable models to recover intelligently.",
+    "title": "MCP Error Handling for Model Self-Correction",
     "sources": [
       {
         "url": "https://modelcontextprotocol.io/docs/concepts/tools/",
@@ -1672,28 +1947,28 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Unhandled tool errors crash agents; structured errors enable models to recover intelligently.",
-    "path": "techniques/tooling/mcp-error-handling-model-recovery.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Designing MCP Tools for Agent Clarity and Composability",
-    "supersedes": [],
-    "confidence": "verified",
     "ecosystems": [
       "mcp",
       "claude-code",
       "claude-api"
     ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/tooling/mcp-error-handling-model-recovery.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "verified",
+    "updated": "2026-07-28",
+    "category": "tooling",
     "works_with": [
       "mcp-error-handling-model-recovery",
       "claude-tool-naming-descriptions"
     ],
-    "added": "2026-07-28",
-    "category": "tooling",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "mcp-tool-design-principles",
+    "problem": "Poorly designed tools confuse agents and waste context through unclear purposes and fragmented operations.",
+    "title": "Designing MCP Tools for Agent Clarity and Composability",
     "sources": [
       {
         "url": "https://modelcontextprotocol.io/docs/concepts/tools/",
@@ -1711,26 +1986,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Poorly designed tools confuse agents and waste context through unclear purposes and fragmented operations.",
+    "ecosystems": [
+      "mcp",
+      "claude-code",
+      "claude-api"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/tooling/mcp-tool-design-principles.md"
   },
   {
-    "effort_to_adopt": "high",
-    "title": "Sandboxing MCP Tool Execution for Security and Isolation",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "mcp",
-      "generic"
-    ],
+    "updated": "2026-07-29",
+    "category": "tooling",
     "works_with": [
       "mcp-tool-design-principles"
     ],
-    "added": "2026-07-28",
-    "category": "tooling",
-    "updated": "2026-07-29",
+    "maturity": "emerging",
     "id": "mcp-tool-execution-sandboxing",
+    "problem": "Running untrusted tool code in the MCP server process enables code injection, resource exhaustion, and lateral movement.",
+    "title": "Sandboxing MCP Tool Execution for Security and Isolation",
     "sources": [
       {
         "url": "https://checkmarx.com/learn/mcp-security-risks-real-world-incidents-and-security-controls/",
@@ -1748,30 +2024,28 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Running untrusted tool code in the MCP server process enables code injection, resource exhaustion, and lateral movement.",
+    "ecosystems": [
+      "mcp",
+      "generic"
+    ],
+    "effort_to_adopt": "high",
     "path": "techniques/tooling/mcp-tool-execution-sandboxing.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Test-Driven Development with AI agents",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "generic"
-    ],
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "plan-then-execute",
       "checkpoint-commit-discipline",
       "iterative-self-refinement"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "ai-assisted-tdd",
+    "problem": "AI agents skip tests or write tests that don't capture requirements, leading to false-passing code",
+    "title": "Test-Driven Development with AI agents",
     "sources": [
       {
         "url": "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide",
@@ -1789,28 +2063,30 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "AI agents skip tests or write tests that don't capture requirements, leading to false-passing code",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "generic"
+    ],
+    "effort_to_adopt": "medium",
     "path": "techniques/workflow/ai-assisted-tdd.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Checkpoint and commit discipline for agent-written code",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "generic"
-    ],
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "plan-then-execute",
       "iterative-self-refinement",
       "human-in-loop-review"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "checkpoint-commit-discipline",
+    "problem": "When agents produce large changes without commits, bugs become hard to isolate and recovery is painful",
+    "title": "Checkpoint and commit discipline for agent-written code",
     "sources": [
       {
         "url": "https://understandingdata.com/posts/checkpoint-commit-patterns/",
@@ -1828,26 +2104,27 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "When agents produce large changes without commits, bugs become hard to isolate and recovery is painful",
+    "ecosystems": [
+      "claude-code",
+      "generic"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/workflow/checkpoint-commit-discipline.md"
   },
   {
-    "effort_to_adopt": "low",
-    "title": "Explore-Plan-Code-Commit workflow for agent tasks",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code"
-    ],
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "plan-then-execute",
       "checkpoint-commit-discipline"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "explore-plan-code-commit",
+    "problem": "Ad-hoc agent direction produces inconsistent results and wasted exploration",
+    "title": "Explore-Plan-Code-Commit workflow for agent tasks",
     "sources": [
       {
         "url": "https://www.openhands.dev/blog/claude-code-best-practices-agentic-coding",
@@ -1865,29 +2142,26 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Ad-hoc agent direction produces inconsistent results and wasted exploration",
+    "ecosystems": [
+      "claude-code"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/workflow/explore-plan-code-commit.md"
   },
   {
-    "effort_to_adopt": "medium",
-    "title": "Strategic human-in-the-loop review gates",
+    "added": "2026-07-28",
     "supersedes": [],
     "confidence": "reported",
-    "ecosystems": [
-      "claude-code",
-      "claude-sdk",
-      "claude-api",
-      "generic"
-    ],
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "plan-then-execute",
       "checkpoint-commit-discipline"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "human-in-loop-review",
+    "problem": "Too few gates = unsafe agent autonomy; too many gates = bottleneck that defeats the point",
+    "title": "Strategic human-in-the-loop review gates",
     "sources": [
       {
         "url": "https://explainx.ai/blog/human-in-the-loop-ai-when-to-let-agent-run-2026",
@@ -1905,30 +2179,30 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Too few gates = unsafe agent autonomy; too many gates = bottleneck that defeats the point",
-    "path": "techniques/workflow/human-in-loop-review.md"
-  },
-  {
-    "effort_to_adopt": "medium",
-    "title": "Iterative self-refinement loops for agent code quality",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
       "claude-api",
       "generic"
     ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/workflow/human-in-loop-review.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "ai-assisted-tdd",
       "checkpoint-commit-discipline",
       "plan-then-execute"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "iterative-self-refinement",
+    "problem": "Agents produce code on first try that is correct but unmaintainable, or that misses edge cases",
+    "title": "Iterative self-refinement loops for agent code quality",
     "sources": [
       {
         "url": "https://deepsense.ai/resource/self-correcting-code-generation-using-multi-step-agent/",
@@ -1946,30 +2220,30 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Agents produce code on first try that is correct but unmaintainable, or that misses edge cases",
-    "path": "techniques/workflow/iterative-self-refinement.md"
-  },
-  {
-    "effort_to_adopt": "low",
-    "title": "Plan-then-Execute pattern for structured agent workflows",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
       "claude-api",
       "generic"
     ],
+    "effort_to_adopt": "medium",
+    "path": "techniques/workflow/iterative-self-refinement.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "ai-assisted-tdd",
       "human-in-loop-review",
       "checkpoint-commit-discipline"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "established",
     "id": "plan-then-execute",
+    "problem": "Agents executing without a plan produce meandering, error-prone changes and waste compute",
+    "title": "Plan-then-Execute pattern for structured agent workflows",
     "sources": [
       {
         "url": "https://dev.to/varun_pratapbhardwaj_b13/separation-of-planning-and-execution-the-key-pattern-for-reliable-ai-coding-agents-5b53",
@@ -1987,30 +2261,30 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "established",
-    "problem": "Agents executing without a plan produce meandering, error-prone changes and waste compute",
-    "path": "techniques/workflow/plan-then-execute.md"
-  },
-  {
-    "effort_to_adopt": "low",
-    "title": "Spec-driven development with agent coding",
-    "supersedes": [],
-    "confidence": "reported",
     "ecosystems": [
       "claude-code",
       "claude-sdk",
       "claude-api",
       "generic"
     ],
+    "effort_to_adopt": "low",
+    "path": "techniques/workflow/plan-then-execute.md"
+  },
+  {
+    "added": "2026-07-28",
+    "supersedes": [],
+    "confidence": "reported",
+    "updated": "2026-07-28",
+    "category": "workflow",
     "works_with": [
       "plan-then-execute",
       "ai-assisted-tdd",
       "human-in-loop-review"
     ],
-    "added": "2026-07-28",
-    "category": "workflow",
-    "updated": "2026-07-28",
+    "maturity": "emerging",
     "id": "spec-driven-agent-development",
+    "problem": "Agents without a spec drift into scope creep, build the wrong thing, or make incompatible changes",
+    "title": "Spec-driven development with agent coding",
     "sources": [
       {
         "url": "https://www.openhands.dev/blog/claude-code-best-practices-agentic-coding",
@@ -2028,8 +2302,13 @@
         "date": "2026-07-28"
       }
     ],
-    "maturity": "emerging",
-    "problem": "Agents without a spec drift into scope creep, build the wrong thing, or make incompatible changes",
+    "ecosystems": [
+      "claude-code",
+      "claude-sdk",
+      "claude-api",
+      "generic"
+    ],
+    "effort_to_adopt": "low",
     "path": "techniques/workflow/spec-driven-agent-development.md"
   }
 ]
