@@ -13,3 +13,7 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# Scratch output from source-discovery research agents. Findings get promoted into
+# sources.md; the raw notes are working material, not part of the KB.
+_research/
